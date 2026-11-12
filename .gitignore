@@ -121,3 +121,10 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Local OpenCode adapters (thin pointers to .claude/commands + .claude/agents,
+# plus OpenCode agent definitions). CONTRIBUTING.md declines a parallel command
+# tree for another runtime upstream, so these stay local and must never be
+# committed to this repo. Delete this rule in your own fork if you want to
+# track them there.
+.opencode/
